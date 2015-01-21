@@ -1,1 +1,1 @@
-include ':timemeasurepicker'
+include ':timemeasurepicker', ':sample-date-measure-app'
