@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.hawaii.android.sampledatemeasureapp" >
+    package="edu.hawaii.android.samplehourminutepickerapp" >
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Sample Date Measure App"
+        android:label="Sample Hour Minute Picker App"
         android:theme="@style/Theme.AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="Sample Date Measure App" >
+            android:label="Sample Hour Minute Picker App" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

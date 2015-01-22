@@ -1,4 +1,4 @@
-package edu.hawaii.android.sampledatemeasureapp;
+package edu.hawaii.android.samplehourminutepickerapp;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

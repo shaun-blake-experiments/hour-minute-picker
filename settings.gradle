@@ -1,5 +1,7 @@
-include ':timemeasurepicker', ':sample-date-measure-app'
+include ':sample-hour-minute-picker-app', 'hour-minute-picker'
+
 include ':commonresources'
 project(':commonresources').projectDir = new File(settingsDir, '../common-android-resources/commonresources')
+
 include ':commondemoresources'
 project(':commondemoresources').projectDir = new File(settingsDir, '../common-android-resources/commondemoresources')
