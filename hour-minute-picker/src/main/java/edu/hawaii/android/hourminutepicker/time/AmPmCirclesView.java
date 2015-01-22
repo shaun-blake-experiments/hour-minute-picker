@@ -25,8 +25,8 @@ import android.graphics.Paint.Align;
 import android.util.Log;
 import android.view.View;
 
-import com.android.datetimepicker.R;
-import com.android.datetimepicker.Utils;
+import edu.hawaii.android.hourminutepicker.R;
+import edu.hawaii.android.hourminutepicker.Utils;
 
 import java.text.DateFormatSymbols;
 

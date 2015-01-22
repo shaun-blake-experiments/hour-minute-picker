@@ -37,8 +37,8 @@ import android.view.accessibility.AccessibilityManager;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.FrameLayout;
 
-import com.android.datetimepicker.HapticFeedbackController;
-import com.android.datetimepicker.R;
+import edu.hawaii.android.hourminutepicker.HapticFeedbackController;
+import edu.hawaii.android.hourminutepicker.R;
 
 /**
  * The primary layout to hold the circular picker, and the am/pm buttons. This view well measure

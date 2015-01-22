@@ -31,9 +31,9 @@ import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
 import android.widget.ListView;
 
-import com.android.datetimepicker.Utils;
-import com.android.datetimepicker.date.DatePickerDialog.OnDateChangedListener;
-import com.android.datetimepicker.date.MonthAdapter.CalendarDay;
+import edu.hawaii.android.hourminutepicker.Utils;
+import edu.hawaii.android.hourminutepicker.date.DatePickerDialog.OnDateChangedListener;
+import edu.hawaii.android.hourminutepicker.date.MonthAdapter.CalendarDay;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

@@ -30,7 +30,7 @@ import android.graphics.Paint.Align;
 import android.util.Log;
 import android.view.View;
 
-import com.android.datetimepicker.R;
+import edu.hawaii.android.hourminutepicker.R;
 
 /**
  * A view to show a series of numbers in a circular pattern.

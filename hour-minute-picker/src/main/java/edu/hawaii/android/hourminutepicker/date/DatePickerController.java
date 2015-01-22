@@ -16,8 +16,8 @@
 
 package edu.hawaii.android.hourminutepicker.date;
 
-import com.android.datetimepicker.date.DatePickerDialog.OnDateChangedListener;
-import com.android.datetimepicker.date.MonthAdapter.CalendarDay;
+import edu.hawaii.android.hourminutepicker.date.DatePickerDialog.OnDateChangedListener;
+import edu.hawaii.android.hourminutepicker.date.MonthAdapter.CalendarDay;
 
 import java.util.Calendar;
 

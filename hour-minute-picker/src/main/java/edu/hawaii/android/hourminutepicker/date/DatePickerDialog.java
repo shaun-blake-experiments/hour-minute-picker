@@ -35,10 +35,10 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.android.datetimepicker.HapticFeedbackController;
-import com.android.datetimepicker.R;
-import com.android.datetimepicker.Utils;
-import com.android.datetimepicker.date.MonthAdapter.CalendarDay;
+import edu.hawaii.android.hourminutepicker.HapticFeedbackController;
+import edu.hawaii.android.hourminutepicker.R;
+import edu.hawaii.android.hourminutepicker.Utils;
+import edu.hawaii.android.hourminutepicker.date.MonthAdapter.CalendarDay;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

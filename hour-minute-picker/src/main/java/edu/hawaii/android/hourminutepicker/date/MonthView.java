@@ -37,9 +37,9 @@ import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 
-import com.android.datetimepicker.R;
-import com.android.datetimepicker.Utils;
-import com.android.datetimepicker.date.MonthAdapter.CalendarDay;
+import edu.hawaii.android.hourminutepicker.R;
+import edu.hawaii.android.hourminutepicker.Utils;
+import edu.hawaii.android.hourminutepicker.date.MonthAdapter.CalendarDay;
 
 import java.security.InvalidParameterException;
 import java.util.Calendar;
