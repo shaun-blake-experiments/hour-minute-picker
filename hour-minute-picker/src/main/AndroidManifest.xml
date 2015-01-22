@@ -1,4 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.hawaii.android.hourminutepicker">
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+
 </manifest>

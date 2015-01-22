@@ -7,11 +7,20 @@
     tools:context=".MainActivity$PlaceholderFragment">
 
     <Button
-        android:id="@+id/showHourMinutePicker"
+        android:id="@+id/showDatePicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="android:style/Widget.Material.Button"
-        android:text="Show Hour Minute Picker"
+        android:text="Show Date Picker"
+        />
+
+    <Button
+        android:id="@+id/showTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showDatePicker"
+        style="android:style/Widget.Material.Button"
+        android:text="Show Time Picker"
         />
 
 </RelativeLayout>

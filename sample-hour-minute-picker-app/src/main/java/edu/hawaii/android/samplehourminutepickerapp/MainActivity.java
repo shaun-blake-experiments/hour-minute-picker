@@ -8,6 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import java.util.Calendar;
+
+import edu.hawaii.android.hourminutepicker.date.DatePickerDialog;
+import edu.hawaii.android.hourminutepicker.time.RadialPickerLayout;
+import edu.hawaii.android.hourminutepicker.time.TimePickerDialog;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -16,7 +22,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
+            getFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
@@ -25,7 +31,7 @@ public class MainActivity extends ActionBarActivity {
     /**
      * A placeholder fragment containing a simple view.
      */
-    public static class PlaceholderFragment extends Fragment {
+    public static class PlaceholderFragment extends android.app.Fragment implements DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener {
 
         public PlaceholderFragment() {
         }
@@ -35,20 +41,55 @@ public class MainActivity extends ActionBarActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
-            View datePickerBtn = rootView.findViewById(R.id.showHourMinutePicker);
+            View datePickerBtn = rootView.findViewById(R.id.showDatePicker);
             datePickerBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
-                    CharSequence text = "This is where I would use the time measure picker...";
-                    int duration = Toast.LENGTH_SHORT;
+                    final Calendar c = Calendar.getInstance();
+                    int year = c.get(Calendar.YEAR);
+                    int month = c.get(Calendar.MONTH);
+                    int day = c.get(Calendar.DAY_OF_MONTH);
 
-                    Toast toast = Toast.makeText(PlaceholderFragment.this.getActivity(), text, duration);
-                    toast.show();
+                    DatePickerDialog dialog = DatePickerDialog.newInstance(PlaceholderFragment.this, year, month, day);
+                    dialog.show(getFragmentManager(), "datePicker");
                 }
             });
 
+            View timePickerBtn = rootView.findViewById(R.id.showTimePicker);
+            timePickerBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    final Calendar c = Calendar.getInstance();
+                    int hourOfDay = c.get(Calendar.HOUR_OF_DAY);
+                    int minute = c.get(Calendar.MINUTE);
+
+                    TimePickerDialog dialog = TimePickerDialog.newInstance(PlaceholderFragment.this, hourOfDay, minute, false);
+                    dialog.show(getFragmentManager(), "timePicker");
+                }
+            });
+
+
             return rootView;
+        }
+
+        @Override
+        public void onDateSet(DatePickerDialog dialog, int year, int monthOfYear, int dayOfMonth) {
+            CharSequence text = "Date!";
+            int duration = Toast.LENGTH_SHORT;
+
+            Toast toast = Toast.makeText(this.getActivity(), text, duration);
+            toast.show();
+        }
+
+        @Override
+        public void onTimeSet(RadialPickerLayout view, int hourOfDay, int minute) {
+            CharSequence text = "Time!";
+            int duration = Toast.LENGTH_SHORT;
+
+            Toast toast = Toast.makeText(this.getActivity(), text, duration);
+            toast.show();
         }
     }
 }
