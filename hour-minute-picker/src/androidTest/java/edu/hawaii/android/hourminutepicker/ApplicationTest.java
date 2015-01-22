@@ -1,4 +1,4 @@
-package edu.hawaii.android.timemeasurepicker;
+package edu.hawaii.android.hourminutepicker;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
