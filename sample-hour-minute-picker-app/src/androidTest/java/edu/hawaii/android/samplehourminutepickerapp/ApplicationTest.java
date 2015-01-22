@@ -1,4 +1,4 @@
-package edu.hawaii.android.sampledatemeasureapp;
+package edu.hawaii.android.samplehourminutepickerapp;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

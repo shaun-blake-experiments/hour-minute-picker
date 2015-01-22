@@ -28,8 +28,8 @@ import android.graphics.Paint;
 import android.util.Log;
 import android.view.View;
 
-import com.android.datetimepicker.R;
-import com.android.datetimepicker.Utils;
+import edu.hawaii.android.hourminutepicker.R;
+import edu.hawaii.android.hourminutepicker.Utils;
 
 /**
  * View to show what number is selected. This will draw a blue circle over the number, with a blue

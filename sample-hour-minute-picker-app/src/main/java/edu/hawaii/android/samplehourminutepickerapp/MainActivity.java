@@ -35,7 +35,7 @@ public class MainActivity extends ActionBarActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
-            View datePickerBtn = rootView.findViewById(R.id.showTimeMeasurePicker);
+            View datePickerBtn = rootView.findViewById(R.id.showHourMinutePicker);
             datePickerBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

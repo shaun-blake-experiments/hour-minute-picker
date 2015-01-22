@@ -28,7 +28,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.android.datetimepicker.R;
+import edu.hawaii.android.hourminutepicker.R;
 import edu.hawaii.android.hourminutepicker.date.DatePickerDialog.OnDateChangedListener;
 
 import java.util.ArrayList;
