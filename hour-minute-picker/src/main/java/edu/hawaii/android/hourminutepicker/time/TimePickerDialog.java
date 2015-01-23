@@ -200,8 +200,8 @@ public class TimePickerDialog extends DialogFragment implements OnValueSelectedL
         mSelectHours = res.getString(R.string.select_hours);
         mMinutePickerDescription = res.getString(R.string.minute_picker_description);
         mSelectMinutes = res.getString(R.string.select_minutes);
-        mSelectedColor = res.getColor(mThemeDark? R.color.red : R.color.blue);
-        mUnselectedColor = res.getColor(mThemeDark? R.color.white : R.color.numbers_text_color);
+        mSelectedColor = res.getColor(mThemeDark? R.color.red : R.color.white);
+        mUnselectedColor = res.getColor(mThemeDark? R.color.white : R.color.transparent_white);
 
         mHourView = (TextView) view.findViewById(R.id.hours);
         mHourView.setOnKeyListener(keyboardListener);
@@ -263,6 +263,13 @@ public class TimePickerDialog extends DialogFragment implements OnValueSelectedL
             }
         });
         mDoneButton.setOnKeyListener(keyboardListener);
+
+        view.findViewById(R.id.cancel_button).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dismiss();
+            }
+        });
 
         // Enable or disable the AM/PM view.
         mAmPmHitspace = view.findViewById(R.id.ampm_hitspace);
