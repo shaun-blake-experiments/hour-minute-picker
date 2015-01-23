@@ -13,19 +13,34 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="?android:attr/buttonBarStyle"
     android:layout_width="@dimen/date_picker_component_width"
     android:layout_height="wrap_content"
+    android:padding="@dimen/view_margin_medium"
     android:orientation="vertical" >
 
     <Button
-        android:id="@+id/done"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="match_parent"
+        android:id="@id/cancel"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minHeight="48dp"
+        android:layout_margin="@dimen/view_margin_medium"
+        android:layout_toStartOf="@id/done"
+        android:layout_toLeftOf="@id/done"
+        android:text="@string/cancel_label"
+        android:textSize="@dimen/done_label_size"
+        android:textColor="@color/done_text_color"
+        style="@style/button_bar_button" />
+    
+    <Button
+        android:id="@id/done"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/view_margin_medium"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:text="@string/done_label"
         android:textSize="@dimen/done_label_size"
-        android:textColor="@color/done_text_color" />
-</LinearLayout>
+        android:textColor="@color/done_text_color"
+        style="@style/button_bar_button"/>
+</RelativeLayout>
