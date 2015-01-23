@@ -93,6 +93,7 @@ public class DatePickerDialog extends DialogFragment implements
     private DayPickerView mDayPickerView;
     private YearPickerView mYearPickerView;
     private Button mDoneButton;
+    private Button mCancelButton;
 
     private int mCurrentView = UNINITIALIZED;
 
@@ -245,16 +246,21 @@ public class DatePickerDialog extends DialogFragment implements
         animation2.setDuration(ANIMATION_DURATION);
         mAnimator.setOutAnimation(animation2);
 
-        mDoneButton = (Button) view.findViewById(R.id.done);
-        mDoneButton.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
+        mDoneButton = ((Button) view.findViewById(R.id.done));
+        mCancelButton = ((Button) view.findViewById(R.id.cancel));
+        mDoneButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
                 tryVibrate();
                 if (mCallBack != null) {
                     mCallBack.onDateSet(DatePickerDialog.this, mCalendar.get(Calendar.YEAR),
                             mCalendar.get(Calendar.MONTH), mCalendar.get(Calendar.DAY_OF_MONTH));
                 }
+                dismiss();
+            }
+        });
+        mCancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 dismiss();
             }
         });
