@@ -339,7 +339,6 @@ public class TimePickerDialog extends DialogFragment implements OnValueSelectedL
         view.findViewById(R.id.time_display).setBackgroundColor(mThemeDark? darkGray : white);
         ((TextView) view.findViewById(R.id.separator)).setTextColor(mThemeDark? white : timeDisplay);
         ((TextView) view.findViewById(R.id.ampm_label)).setTextColor(mThemeDark? white : timeDisplay);
-        view.findViewById(R.id.line).setBackgroundColor(mThemeDark? darkLine : line);
         mDoneButton.setTextColor(mThemeDark? darkDoneTextColor : doneTextColor);
         mTimePicker.setBackgroundColor(mThemeDark? lightGray : circleBackground);
         mDoneButton.setBackgroundResource(mThemeDark? darkDoneBackground : doneBackground);
