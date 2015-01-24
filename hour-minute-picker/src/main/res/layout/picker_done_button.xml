@@ -29,7 +29,7 @@
         android:layout_toLeftOf="@id/done_button"
         android:text="@string/cancel_label"
         android:textSize="@dimen/done_label_size"
-        android:textColor="@color/done_text_color"
+        android:textColor="@color/text_color_dark"
         style="@style/button_bar_button" />
     
     <Button

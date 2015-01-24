@@ -322,22 +322,18 @@ public class TimePickerDialog extends DialogFragment implements OnValueSelectedL
         mTimePicker.setTheme(getActivity().getApplicationContext(), mThemeDark);
         // Prepare some colors to use.
         int white = res.getColor(R.color.white);
-        int blue = res.getColor(R.color.blue);
+        int green = res.getColor(R.color.green);
         int circleBackground = res.getColor(R.color.circle_background);
-        int line = res.getColor(R.color.line_background);
         int timeDisplay = res.getColor(R.color.transparent_white);
         ColorStateList doneTextColor = res.getColorStateList(R.color.done_text_color);
-        int doneBackground = R.drawable.done_background_color;
 
-        int darkGray = res.getColor(R.color.dark_gray);
         int lightGray = res.getColor(R.color.light_gray);
-        int darkLine = res.getColor(R.color.line_dark);
         ColorStateList darkDoneTextColor = res.getColorStateList(R.color.done_text_color_dark);
-        int darkDoneBackground = R.drawable.done_background_color_dark;
 
         // Set the colors for each view based on the theme.
-        view.findViewById(R.id.time_display_background).setBackgroundColor(mThemeDark ? blue : blue);
-        view.findViewById(R.id.time_display).setBackgroundColor(mThemeDark ? blue : blue);
+        //TODO -- fix the dark theme
+        view.findViewById(R.id.time_display_background).setBackgroundColor(mThemeDark ? green : green);
+        view.findViewById(R.id.time_display).setBackgroundColor(mThemeDark ? green : green);
         ((TextView) view.findViewById(R.id.separator)).setTextColor(mThemeDark? white : timeDisplay);
         ((TextView) view.findViewById(R.id.ampm_label)).setTextColor(mThemeDark? white : timeDisplay);
         mDoneButton.setTextColor(mThemeDark? darkDoneTextColor : doneTextColor);

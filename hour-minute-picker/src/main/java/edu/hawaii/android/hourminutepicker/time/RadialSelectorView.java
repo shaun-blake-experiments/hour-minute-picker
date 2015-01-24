@@ -100,8 +100,8 @@ public class RadialSelectorView extends View {
 
         Resources res = context.getResources();
 
-        int blue = res.getColor(R.color.blue);
-        mPaint.setColor(blue);
+        int green = res.getColor(R.color.green);
+        mPaint.setColor(green);
         mPaint.setAntiAlias(true);
         mSelectionAlpha = SELECTED_ALPHA;
 
@@ -148,7 +148,7 @@ public class RadialSelectorView extends View {
             color = res.getColor(R.color.red);
             mSelectionAlpha = SELECTED_ALPHA_THEME_DARK;
         } else {
-            color = res.getColor(R.color.blue);
+            color = res.getColor(R.color.green);
             mSelectionAlpha = SELECTED_ALPHA;
         }
         mPaint.setColor(color);

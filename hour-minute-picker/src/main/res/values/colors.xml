@@ -16,28 +16,30 @@
 -->
 <resources>
 
-    <color name="white">#ffffff</color>
-    <color name="grey">#ddd</color>
-    <color name="circle_background">#f2f2f2</color>
-    <color name="line_background">#cccccc</color>
-    <color name="ampm_text_color">#8c8c8c</color>
-    <color name="done_text_color_normal">@color/blue</color>
-    <color name="done_text_color_disabled">#cccccc</color>
-    <color name="numbers_text_color">#8c8c8c</color>
-
+    <color name="white">#ffffffff</color>
+    <!--<color name="grey">#ddd</color>-->
+    <color name="light_circle_color">#f2f2f2</color>
+    <color name="text_color_dark">#89000000</color>
+    <color name="disabled_text_dark">#4c000000</color>
     <color name="transparent_white">#aaffffff</color>
-
     <color name="transparent_black">#7f000000</color>
-    <color name="blue">#33b5e5</color>
-    <color name="blue_focused">#c1e8f7</color>
-    <color name="neutral_pressed">#33999999</color>
-    <color name="darker_blue">#0099cc</color>
-    <color name="date_picker_text_normal">#ff999999</color>
-    <color name="date_picker_text_disabled">#ccc</color>
 
-    <color name="calendar_header">@color/darker_blue</color>
-    <color name="date_picker_view_animator">#f2f2f2</color>
-    <color name="calendar_selected_date_text">#ffd1d2d4</color>
+    <color name="circle_background">@color/white</color>
+    <color name="ampm_text_color">@color/text_color_dark</color>
+    <color name="done_text_color_normal">@color/green</color>
+    <color name="done_text_color_disabled">@color/disabled_text_dark</color>
+
+
+    <color name="neutral_pressed">#33999999</color>
+
+
+
+    <color name="date_picker_text_normal">@color/text_color_dark</color>
+    <color name="date_picker_text_disabled">@color/disabled_text_dark</color>
+
+    <color name="calendar_header">@color/green_dark</color>
+    <color name="date_picker_view_animator">@color/white</color>
+    <color name="calendar_selected_date_text">@color/green</color>
 
     <!-- Colors for red theme -->
     <color name="red">#ff3333</color>
@@ -48,4 +50,11 @@
     <color name="done_text_color_dark_normal">#ffffff</color>
     <color name="done_text_color_dark_disabled">#888888</color>
     <color name="done_disabled_dark">#bfbfbf</color>
+
+    <!-- Lollipop Light Version -->
+    <color name="green">@color/material_deep_teal_500</color>
+    <color name="green_focused">@color/material_deep_teal_200</color>
+    <color name="material_deep_teal_700">#ff00796B</color>
+    <color name="green_dark">@color/material_deep_teal_700</color>
+    <color name="green_circle_background">@color/green_focused</color>
 </resources>

@@ -342,7 +342,7 @@ public class DatePickerDialog extends DialogFragment implements
     private void updateDisplay(boolean announce) {
         if (mDayOfWeekView != null) {
             mDayOfWeekView.setText(mCalendar.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG,
-                    Locale.getDefault()).toUpperCase(Locale.getDefault()));
+                    Locale.getDefault()));
         }
 
         mSelectedMonthTextView.setText(mCalendar.getDisplayName(Calendar.MONTH, Calendar.SHORT,
