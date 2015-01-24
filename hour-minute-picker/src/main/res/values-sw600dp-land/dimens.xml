@@ -29,5 +29,6 @@
     <dimen name="header_height">96dip</dimen>
     <dimen name="footer_height">48dip</dimen>
     <dimen name="left_side_width">315dip</dimen>
+    <dimen name="dialog_height">350dp</dimen>
 
 </resources>

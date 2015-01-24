@@ -322,9 +322,10 @@ public class TimePickerDialog extends DialogFragment implements OnValueSelectedL
         mTimePicker.setTheme(getActivity().getApplicationContext(), mThemeDark);
         // Prepare some colors to use.
         int white = res.getColor(R.color.white);
+        int blue = res.getColor(R.color.blue);
         int circleBackground = res.getColor(R.color.circle_background);
         int line = res.getColor(R.color.line_background);
-        int timeDisplay = res.getColor(R.color.numbers_text_color);
+        int timeDisplay = res.getColor(R.color.transparent_white);
         ColorStateList doneTextColor = res.getColorStateList(R.color.done_text_color);
         int doneBackground = R.drawable.done_background_color;
 
@@ -335,13 +336,12 @@ public class TimePickerDialog extends DialogFragment implements OnValueSelectedL
         int darkDoneBackground = R.drawable.done_background_color_dark;
 
         // Set the colors for each view based on the theme.
-        view.findViewById(R.id.time_display_background).setBackgroundColor(mThemeDark? darkGray : white);
-        view.findViewById(R.id.time_display).setBackgroundColor(mThemeDark? darkGray : white);
+        view.findViewById(R.id.time_display_background).setBackgroundColor(mThemeDark ? blue : blue);
+        view.findViewById(R.id.time_display).setBackgroundColor(mThemeDark ? blue : blue);
         ((TextView) view.findViewById(R.id.separator)).setTextColor(mThemeDark? white : timeDisplay);
         ((TextView) view.findViewById(R.id.ampm_label)).setTextColor(mThemeDark? white : timeDisplay);
         mDoneButton.setTextColor(mThemeDark? darkDoneTextColor : doneTextColor);
         mTimePicker.setBackgroundColor(mThemeDark? lightGray : circleBackground);
-        mDoneButton.setBackgroundResource(mThemeDark? darkDoneBackground : doneBackground);
         return view;
     }
 
@@ -644,7 +644,7 @@ public class TimePickerDialog extends DialogFragment implements OnValueSelectedL
 
     /**
      * Get out of keyboard mode. If there is nothing in typedTimes, revert to TimePicker's time.
-     * @param changeDisplays If true, update the displays with the relevant time.
+     * @param updateDisplays If true, update the displays with the relevant time.
      */
     private void finishKbMode(boolean updateDisplays) {
         mInKbMode = false;
