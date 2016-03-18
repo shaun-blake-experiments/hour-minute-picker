@@ -1,0 +1,5 @@
+<!-- Just allows the ic_access_time_black_24dp vector to be used by AppCompat
+     in certain cases (drawableLeft). Make sure your activity extends AppCompatActivity. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_access_time_black_24dp_vector" />
+</selector>
