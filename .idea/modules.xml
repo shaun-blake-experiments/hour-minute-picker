@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../common-android-resources/commondemoresources/commondemoresources.iml" filepath="$PROJECT_DIR$/../common-android-resources/commondemoresources/commondemoresources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../common-android-resources/commonresources/commonresources.iml" filepath="$PROJECT_DIR$/../common-android-resources/commonresources/commonresources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hour-minute-picker.iml" filepath="$PROJECT_DIR$/hour-minute-picker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hour-minute-picker-library/hour-minute-picker-library.iml" filepath="$PROJECT_DIR$/hour-minute-picker-library/hour-minute-picker-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample-hour-minute-picker-app/sample-hour-minute-picker-app.iml" filepath="$PROJECT_DIR$/sample-hour-minute-picker-app/sample-hour-minute-picker-app.iml" />
+    </modules>
+  </component>
+</project>
